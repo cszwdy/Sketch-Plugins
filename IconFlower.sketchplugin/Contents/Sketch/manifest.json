@@ -1,0 +1,27 @@
+{
+	"author": "Avadh BS Dwivedi",
+	"commands": [
+		{
+		"name": "IconFlower",
+		"handlers": {
+			"run": "onRun"
+		},
+		"identifier": "com.bohemiancoding.sketch.runscriptidentifier",
+		"description" : "Genreate phylotaxis (sunflower like) pattern",
+    "icon" : "icons/icon.png",
+		"script": "script.cocoascript"
+	}
+	],
+	"identifier": "com.example.sketch.d701dfe6-8995-454b-ba89-e5f894208334",
+	"version": "1.0",
+	"appcast": "https://api.sketchpacks.com/v1/plugins/com.bohemiancoding.sketch.runscriptidentifier/appcast",
+	"description": "Arrange icons, images, text and shapes in Phyllotaxis (leaf arrangement) patterns. pattern in a sunflower, for example.",
+	"menu": {
+		"title": "IconFlower",
+		"items": [
+		"com.bohemiancoding.sketch.runscriptidentifier"
+	]
+	},
+	"authorEmail": "avadh@risinghues.com",
+	"name": "IconFlower"
+}

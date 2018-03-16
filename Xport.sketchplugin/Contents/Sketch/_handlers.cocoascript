@@ -1,0 +1,16 @@
+@import 'xport.js'
+
+var selectXcodeProject = function(context) {
+	parseContext(context)
+	showProjectSelectionDialog()
+}
+
+var exportSelectedLayers = function(context) {
+	parseContext(context)
+	showExportDialog()
+}
+
+var exportWithPadding = function(context) {
+	parseContext(context)
+	showPaddingDialog()
+}
