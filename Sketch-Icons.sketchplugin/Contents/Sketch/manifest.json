@@ -1,7 +1,7 @@
 {
-  "compatibleVersion": 47,
+  "compatibleVersion": 48,
   "bundleVersion": 1,
-  "version": "3.0.14",
+  "version": "4.0.0",
   "name": "Sketch-Icons",
   "identifier": "com.amoreaux.sketch-icons",
   "description": "Import your icons, apply a color mask and create a dynamic icons library.",
@@ -38,7 +38,7 @@
     },
     {
       "script": "commands.js",
-      "handler": "updateMaskOnSelectedArtboards",
+      "handler": "addMaskOnSelectedArtboards",
       "name": "Replace color mask...",
       "identifier": "update.mask.selected.artboard",
       "icon": "icons/icon-square-1.jpg",
@@ -51,6 +51,23 @@
       "identifier": "remove.mask.selected.artboard",
       "icon": "icons/icon-square-1.jpg",
       "description": "Remove mask on selected artboard"
+    },
+    {
+      "script": "commands.js",
+      "handler": "setSettings",
+      "name": "Settings",
+      "identifier": "settings.sketch.icons",
+      "shortcut": "command shift f",
+      "icon": "icons/icon-square-1.jpg",
+      "description": "Configure sketch icons"
+    },
+    {
+      "script": "commands.js",
+      "handler": "organizeIcons",
+      "name": "Organize icons...",
+      "identifier": "organize.icons.selected.layer",
+      "icon": "icons/icon-square-1.jpg",
+      "description": "Organize selected icons"
     }
   ],
   "menu": {
@@ -58,10 +75,13 @@
     "items": [
       "import.icons",
       "update.icons.selected.artboard",
+      "organize.icons.selected.layer",
       "-",
       "mask.selected.artboard",
       "update.mask.selected.artboard",
-      "remove.mask.selected.artboard"
+      "remove.mask.selected.artboard",
+      "-",
+      "settings.sketch.icons"
     ]
   },
   "disableCocoaScriptPreprocessor": true

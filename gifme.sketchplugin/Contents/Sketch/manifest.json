@@ -1,0 +1,32 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "🖼 Gif me",
+      "identifier": "gif-me",
+      "script": "video.js",
+      "shortcut": "cmd shift g"
+    },
+    {
+      "name": "onOpenDocument",
+      "identifier": "onOpenDocument",
+      "script": "video.js",
+      "handlers": {
+        "actions": {
+          "OpenDocument": "onOpenDocument"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "isRoot": true,
+    "items": [
+      "gif-me"
+    ]
+  },
+  "version": "0.2.1",
+  "name": "Gif me",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
+}
